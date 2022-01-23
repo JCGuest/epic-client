@@ -7,8 +7,6 @@ import myEpicNft from "./utils/MyEpicNFT.json"
 // Constants
 const TWITTER_HANDLE = 'johnguestdev';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = '';
-const TOTAL_MINT_COUNT = 50;
 const CONTRACT_ADDRESS = "0xe556b0ad40B7A725dbc73Df2e1FF02384B136873";
 
 const App = () => {
@@ -105,7 +103,7 @@ const askContractToMintNft = async () => {
 
       console.log("Mining...please wait.")
       alert("Mining...please wait.")
-      
+
       await nftTxn.wait();
       
       console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
