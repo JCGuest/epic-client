@@ -97,6 +97,7 @@ const openCollection = () => {
 }
 
   useEffect(() => {
+    const checkIfWalletIsConnected = async () => {
       const { ethereum } = window;
     
         if (!ethereum) {
@@ -119,6 +120,8 @@ const openCollection = () => {
         } else {
           console.log("No authorized account found")
         }
+    }
+    checkIfWalletIsConnected();    
   }, [])
 
   return (
