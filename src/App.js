@@ -12,49 +12,24 @@ const CONTRACT_ADDRESS = "0xe556b0ad40B7A725dbc73Df2e1FF02384B136873";
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
 
-  const checkIfWalletIsConnected = async () => {
-  const { ethereum } = window;
+  const connectWallet = async () => {
+    try {
+      const { ethereum } = window;
+      if (!ethereum) {
+        alert("Get MetaMask!");
+        return;
+      }
+      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
 
-    if (!ethereum) {
-      console.log("Make sure you have metamask!");
-      return;
-    } else {
-      console.log("We have the ethereum object", ethereum);
+      /*
+      * Boom! This should print out public address once we authorize Metamask.
+      */
+      console.log("Connected", accounts[0]);
+      setCurrentAccount(accounts[0]); 
+      setupEventListener() 
+    } catch (error) {
+      console.log(error)
     }
-
-  const accounts = await ethereum.request({ method: 'eth_accounts' });
-
-    /*
-    * User can have multiple authorized accounts, we grab the first one if its there!
-    */
-    if (accounts.length !== 0) {
-      const account = accounts[0];
-      console.log("Found an authorized account:", account);
-      setCurrentAccount(account)
-      setupEventListener()
-    } else {
-      console.log("No authorized account found")
-    }
-}
-
-const connectWallet = async () => {
-  try {
-    const { ethereum } = window;
-    if (!ethereum) {
-      alert("Get MetaMask!");
-      return;
-    }
-    const accounts = await ethereum.request({ method: "eth_requestAccounts" });
-
-    /*
-    * Boom! This should print out public address once we authorize Metamask.
-    */
-    console.log("Connected", accounts[0]);
-    setCurrentAccount(accounts[0]); 
-    setupEventListener() 
-  } catch (error) {
-    console.log(error)
-  }
 }
 
  // Render Methods
@@ -122,7 +97,31 @@ const openCollection = () => {
 }
 
   useEffect(() => {
-      checkIfWalletIsConnected();
+    const checkIfWalletIsConnected = async () => {
+      const { ethereum } = window;
+    
+        if (!ethereum) {
+          console.log("Make sure you have metamask!");
+          return;
+        } else {
+          console.log("We have the ethereum object", ethereum);
+        }
+    
+      const accounts = await ethereum.request({ method: 'eth_accounts' });
+    
+        /*
+        * User can have multiple authorized accounts, we grab the first one if its there!
+        */
+        if (accounts.length !== 0) {
+          const account = accounts[0];
+          console.log("Found an authorized account:", account);
+          setCurrentAccount(account)
+          setupEventListener()
+        } else {
+          console.log("No authorized account found")
+        }
+    }
+    
   }, [])
 
   return (
