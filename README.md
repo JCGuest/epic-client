@@ -1,11 +1,8 @@
-# buildspace Mint Your Own NFT Collection
+# NFT Marketplace
 
 ### **Welcome 👋**
 
-To get started with this course, clone this repo and follow these commands:
+This is a Reactjs client for a Solidity/Hardhatjs DApp that mints randomly generated NFTs that are stored on-chain as SVGs. The NFT collection, seen here: [OpenSea Collection](https://testnets.opensea.io/collection/3wordnft-t6qy11gqwz)
+, are images created from a selection of sci-fi words and random background colors.
 
-1. Run `npm install` at the root of your directory
-2. Run `npm run start` to start the project
-3. Start coding!
-
-[![Alternate Text](https://i.ibb.co/rtxqZBN/loom2.png)](https://www.loom.com/share/97141067a9b34985ab5604350f547b89?sharedAppSource=personal_library "Video Demo")
+[![Video Demo Link](https://i.ibb.co/rtxqZBN/loom2.png)](https://www.loom.com/share/97141067a9b34985ab5604350f547b89?sharedAppSource=personal_library "Video Demo")
