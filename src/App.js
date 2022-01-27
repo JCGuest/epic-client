@@ -7,7 +7,7 @@ import myEpicNft from "./utils/MyEpicNFT.json"
 // Constants
 const TWITTER_HANDLE = 'johnguestdev';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const CONTRACT_ADDRESS = "0x172d8F75a9691e682194626268eb836766b113e2";
+const CONTRACT_ADDRESS = "0x7F1e4307859C6439C2AE00405711EB99a424628d";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
