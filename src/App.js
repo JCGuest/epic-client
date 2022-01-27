@@ -132,7 +132,7 @@ const openCollection = () => {
           <p className="sub-text">
 
             <p><small>Connect your wallet and switch to Rinkeby network.</small><br></br> 
-            <small>Each token is randomly generated from a selection of colors and sci-fi related words.</small></p>
+            <small>Each token is randomly generated from a selection of colors and sci-fi words.</small></p>
 
             {/* <a href="https://testnets.opensea.io/collection/3wordnft-t6qy11gqwz/" target="_blank">Here</a> is a link to the collection on OpenSea. */}
             
