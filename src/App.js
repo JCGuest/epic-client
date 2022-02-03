@@ -147,27 +147,27 @@ const openCollection = () => {
         </div>
         <div>
 
-          <a href='https://testnets.opensea.io/collection/3wordnft-v85' target='_blank'>
+          <a href='https://testnets.opensea.io/collection/3wordnft-v85' target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/10ff05f60c87b97d97dd0df2d531f9d9.svg" alt="NFT" width="150" height="200"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'>
+          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'  rel="noreferrer">
             <img src="https://storage.opensea.io/files/50813ba7108162140f0a4f0c22b186b8.svg" alt="NFT" width="150" height="200"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' >
+          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'  rel="noreferrer">
             <img src="https://storage.opensea.io/files/d2913912ddea89fd75afa38b89c19e88.svg" alt="NFT" width="150" height="200"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'>
+          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/5be44fe938bc8be75d38a3d313504369.svg" alt="NFT" width="150" height="200"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'>
+          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/dd1e946f0a1cd32256f8c9d5bfdfd5b0.svg" alt="NFT" width="150" height="200"></img>           
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'>
+          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/016dd40e3af87f73f1cc5b2dace3f573.svg" alt="NFT" width="150" height="200"></img> 
           </a>
 
