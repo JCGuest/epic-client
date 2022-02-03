@@ -147,11 +147,7 @@ const openCollection = () => {
         <div>
 
           <a href='https://testnets.opensea.io/collection/3wordnft-v85' target='_blank' rel="noreferrer">
-            <img src="https://storage.opensea.io/files/10ff05f60c87b97d97dd0df2d531f9d9.svg" alt="NFT" width="220" height="300"></img>
-          </a>
-
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'  rel="noreferrer">
-            <img src="https://storage.opensea.io/files/50813ba7108162140f0a4f0c22b186b8.svg" alt="NFT" width="220" height="300"></img>
+            <img src="https://storage.opensea.io/files/701e379610acbc6e15e48ec769febbca.svg" alt="NFT" width="220" height="300"></img>
           </a>
 
           <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'  rel="noreferrer">
