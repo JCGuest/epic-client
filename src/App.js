@@ -49,7 +49,8 @@ const setupEventListener = async () => {
 
       connectedContract.on("NewEpicNFTMinted", (from, tokenId) => {
         console.log(from, tokenId.toNumber())
-        alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
+        // alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
+        `Mined, see transaction: https://etherscan.io/tx/${nftTxn.hash}`
       });
 
       console.log("Setup event listener!")
@@ -79,7 +80,7 @@ const askContractToMintNft = async () => {
 
       await nftTxn.wait();
       
-      console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+      console.log(`Mined, see transaction: https://etherscan.io/tx/${nftTxn.hash}`);
 
     } else {
       console.log("Ethereum object doesn't exist!");
@@ -90,7 +91,7 @@ const askContractToMintNft = async () => {
 }
 
 const openCollection = () => {
-  window.open('https://opensea.io/collection/Sci-Fi Nonsense', '_blank');
+  window.open('https://opensea.io/collection/Sci-FiNonsense', '_blank');
 
 }
 
