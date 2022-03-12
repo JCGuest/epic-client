@@ -7,7 +7,7 @@ import myEpicNft from "./utils/MyEpicNFT.json"
 // Constants
 const TWITTER_HANDLE = 'johnguestdev';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const CONTRACT_ADDRESS = "0x7F1e4307859C6439C2AE00405711EB99a424628d";
+const CONTRACT_ADDRESS = "0xD728A5Ca148dB9E7Eb7f419389A6b59Ba3BB61fa";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -89,7 +89,7 @@ const askContractToMintNft = async () => {
 }
 
 const openCollection = () => {
-  window.open('https://testnets.opensea.io/collection/3wordnft-v85', '_blank');
+  window.open('https://testnets.opensea.io/collection/sci-fi-nonsense-v3', '_blank');
 
 }
 
@@ -134,7 +134,6 @@ const openCollection = () => {
             <button onClick={openCollection} className="cta-button connect-wallet-button">view collection</button>
           {currentAccount === "" ? renderNotConnectedContainer():
             (
-              /** Add askContractToMintNft Action for the onClick event **/
               <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
               mint new NFT
               </button>
@@ -143,23 +142,23 @@ const openCollection = () => {
         </div>
         <div>
 
-          <a href='https://testnets.opensea.io/collection/3wordnft-v85' target='_blank' rel="noreferrer">
+          <a href='https://testnets.opensea.io/collection/sci-fi-nonsense-v3' target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/701e379610acbc6e15e48ec769febbca.svg" alt="NFT" width="220" height="300"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank'  rel="noreferrer">
+          <a href="https://testnets.opensea.io/collection/sci-fi-nonsense-v3" target='_blank'  rel="noreferrer">
             <img src="https://storage.opensea.io/files/d2913912ddea89fd75afa38b89c19e88.svg" alt="NFT" width="220" height="300"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' rel="noreferrer">
+          <a href="https://testnets.opensea.io/collection/sci-fi-nonsense-v3" target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/5be44fe938bc8be75d38a3d313504369.svg" alt="NFT" width="220" height="300"></img>
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' rel="noreferrer">
+          <a href="https://testnets.opensea.io/collection/sci-fi-nonsense-v3" target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/dd1e946f0a1cd32256f8c9d5bfdfd5b0.svg" alt="NFT" width="220" height="300"></img>           
           </a>
 
-          <a href="https://testnets.opensea.io/collection/3wordnft-v85" target='_blank' rel="noreferrer">
+          <a href="https://testnets.opensea.io/collection/sci-fi-nonsense-v3" target='_blank' rel="noreferrer">
             <img src="https://storage.opensea.io/files/016dd40e3af87f73f1cc5b2dace3f573.svg" alt="NFT" width="220" height="300"></img> 
           </a>
 
