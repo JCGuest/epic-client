@@ -7,7 +7,7 @@ import myEpicNft from "./utils/MyEpicNFT.json"
 // Constants
 const TWITTER_HANDLE = 'johnguestdev';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const CONTRACT_ADDRESS = "0xb1DF9Bdb0Af0BbfD4a2337F2DACcC05D5A199d12";
+const CONTRACT_ADDRESS = "0xD728A5Ca148dB9E7Eb7f419389A6b59Ba3BB61fa";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -49,7 +49,7 @@ const setupEventListener = async () => {
 
       connectedContract.on("NewEpicNFTMinted", (from, tokenId) => {
         console.log(from, tokenId.toNumber())
-        alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
+        alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://rinkeby.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
       });
 
       console.log("Setup event listener!")
@@ -79,7 +79,7 @@ const askContractToMintNft = async () => {
 
       await nftTxn.wait();
       
-      console.log(`Mined, see transaction: https://etherscan.io/tx/${nftTxn.hash}`);
+      console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
 
     } else {
       console.log("Ethereum object doesn't exist!");
@@ -90,7 +90,7 @@ const askContractToMintNft = async () => {
 }
 
 const openCollection = () => {
-  window.open('https://opensea.io/collection/Sci-FiNonsense', '_blank');
+  window.open('https://testnets.opensea.io/collection/sci-fi-nonsense-v3', '_blank');
 
 }
 
@@ -135,7 +135,6 @@ const openCollection = () => {
             <button onClick={openCollection} className="cta-button connect-wallet-button">view collection</button>
           {currentAccount === "" ? renderNotConnectedContainer():
             (
-              /** Add askContractToMintNft Action for the onClick event **/
               <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
               mint new NFT
               </button>
